@@ -56,13 +56,13 @@ CheckInRules.setTree({
       isFalse: {
         func: 'hasPhoto',
         isTrue: 'super_admin',
-        isFalse: 'not_allowed'
+        isFalse: 'super_admin'
       }
     },
     isFalse: {
       func: 'hasPhoto',
       isTrue: 'super_admin',
-      isFalse: 'not_allowed'
+      isFalse: 'super_admin'
     }
   }
 });
