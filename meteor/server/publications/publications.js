@@ -30,6 +30,10 @@ Meteor.publish("ucbappaccess", function() {
   return UCBAppAccess.find();
 });
 
+Meteor.publish('pointModifiers', function() {
+  return PointModifiers.find(); 
+});
+
 
 // ------------- EVENT PUBLICATIONS --------------
 Meteor.publish("events", function(start, end) {

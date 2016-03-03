@@ -13,6 +13,16 @@ Meteor.startup(function () {
     });
   }
 
+  //seeding point modifiers
+  if(PointModifiers.find().count() === 0) {
+    var modifiers = [
+      {name: "UCB Button", points: "50"}
+    ];
+    _.each(modifiers, function(modifier) {
+      PointModifiers.insert(modifier);
+    });
+  }
+
   //Seeding Partner Organizations
   if( Meteor.settings.env === 'dev' && PartnerOrgs.find().count() === 0 ) {
     var partnerOrgs = [

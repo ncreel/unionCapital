@@ -88,6 +88,11 @@ Transactions.attachSchema(new SimpleSchema({
       type: Boolean,
       label: "Flag if member wore a button",
       optional: true
+    },
+    pointModifiers: {
+      type: [String],
+      label: "List of modifiers to transaction",
+      optional: true
     }
 }));
 

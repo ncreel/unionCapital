@@ -1,13 +1,14 @@
 var defaultHours = 1;
 var checkIn = {};
 
-Template.eventCheckinDetails.created = function() {
+Template.eventCheckinDetails.onCreated(function() {
   checkIn = new CheckIn(defaultHours);
-};
+  this.subscribe('pointModifiers');
+});
 
-Template.eventCheckinDetails.rendered = function() {
+Template.eventCheckinDetails.onRendered(function() {
   addPlugins();
-};
+});
 
 Template.eventCheckinDetails.helpers({
 
@@ -30,7 +31,11 @@ Template.eventCheckinDetails.helpers({
 
   categories: function() {
     return EventCategories.find();
-  }
+  },
+
+  pointModifiers: function() {
+    return PointModifiers.find();
+  },
 });
 
 Template.eventCheckinDetails.events({
@@ -51,9 +56,7 @@ Template.eventCheckinDetails.events({
 
   'change #upPhoto':  function() {
     var input = $('#upPhoto')[0];
-
     if (input.files && input.files[0]) {
-      console.log(input.files);
       checkIn.setPhoto(input.files[0]);
     }
     else
@@ -64,6 +67,7 @@ Template.eventCheckinDetails.events({
   'click .check-in': function(e) {
     e.preventDefault();
     //defaults to true b/c only ad-hoc events need checking
+
     var isValid = true;
 
     var eventId = Router.current().params.id;
@@ -76,12 +80,12 @@ Template.eventCheckinDetails.events({
       checkIn.eventDate = new Date($('#adHocEventDate').val());
 
       //Validate form
-        $('#eventDescForm').validate();
-        $('#organizationForm').validate();
-        $('#adHocEventDate').validate();
+      $('#eventDescForm').validate();
+      $('#organizationForm').validate();
+      $('#adHocEventDate').validate();
 
-        isValid = $('#eventDescForm').valid() && $('#organizationForm').valid() &&
-          $('#adHocEventDate').valid();
+      isValid = $('#eventDescForm').valid() && $('#organizationForm').valid() &&
+        $('#adHocEventDate').valid();
     }
 
     // Do the form validation here, then call the submit function
