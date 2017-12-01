@@ -1,0 +1,20 @@
+name,address,url,description,institution,category,eventDate,duration,isPointsPerHour,pointsPerHour,privateEvent,points,adHoc,privateWhitelist
+test1,"Boston, MA ",n/a,test,OTHER,"Running, Biking, Team Sport",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test2,"Boston, MA ",n/a,test,OTHER,"Attending a Performance, Festival (4 hours max)",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test3,"Boston, MA ",n/a,test,OTHER,"Donating clothing, goods, foods (100 Points)",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test4,"Boston, MA ",n/a,test,OTHER,Early Childhood Playgroup,2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test5,"Boston, MA ",n/a,test,OTHER,"Exercise program, event",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test6,"Boston, MA ",n/a,test,OTHER,Financial Advisor Meeting,2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test7,"Boston, MA ",n/a,test,OTHER,"Financial, Employment Workshops",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test8,"Boston, MA ",n/a,test,OTHER,Fitness Class,2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test9,"Boston, MA ",n/a,test,OTHER,Health Workshop,2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test10,"Boston, MA ",n/a,test,OTHER,"In-school Meeting, Event",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test11,"Boston, MA ",n/a,test,OTHER,"In-school Volunteer, Chaperone",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test12,"Boston, MA ",n/a,test,OTHER,Job Fairs,2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test13,"Boston, MA ",n/a,test,OTHER,"Lending Circles, FII Meetings",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test14,"Boston, MA ",n/a,test,OTHER,"Political Activity: rally, advocacy, event",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test15,"Boston, MA ",n/a,test,OTHER,"Program at Library, Museum, Education Center",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test16,"Boston, MA ",n/a,test,OTHER,Volunteer: Helping Others (non-family),2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test17,"Boston, MA ",n/a,test,OTHER,"Volunteer: Organization, Event",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test18,"Boston, MA ",n/a,test,OTHER,"Voter Engagement, Registration",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
+test19,"Boston, MA ",n/a,test,OTHER,"Workshop, Info Session, Meeting",2017-11-25 12:00:00 GMT-0500 (UTC),3,1,100,0,300,0,0
