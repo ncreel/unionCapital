@@ -32,7 +32,7 @@ AppConfig = {
   eventCalendar: {
     future: {
       // how many days to look into the future
-      hoursAhead: 6*7*24,
+      hoursAhead: 12*7*24,
       // how many days to look into the future
       hoursBehind: -24
     },
